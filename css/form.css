@@ -5,7 +5,7 @@ body {
 }
   
 .header {
-    padding: 15px 0;
+    padding: 20px 90px;
     background-color: #ffffff;
 }
   
@@ -13,17 +13,17 @@ body {
 .header-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: left;
     border: 0px solid green;
 }
   
 .logo-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     border: 0px solid green;
-    width: 80%;
+    width: 70%;
 }
   
 .logo-content-img {
@@ -32,7 +32,7 @@ body {
   
 .address-text {
     text-align: left;
-    font: normal normal bold 22px/25px Montserrat;
+    font: normal normal bold 20px/21px Montserrat;
     letter-spacing: 0px;
     color: #008CFF;
     text-transform: uppercase;
@@ -45,3 +45,319 @@ body {
 * {
     box-sizing: border-box;
 }
+
+/* <!-- UC-2 --> */
+.form-content {
+    padding-top: 40px;
+    min-height:calc(100% -80px);
+    background-color:#f7f7f7;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+  }
+  
+  .form {
+    top: 173px;
+    left: 427px;
+    width: 167px;
+    height: 108px;
+    width: 70%;
+    background:white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 50px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  
+  .form-head {
+        font: normal normal 25px/3px Roboto;
+        letter-spacing: 0px;
+        color: white;
+        background-color: #008CFF;
+        text-align: center;
+        text-transform: capitalize;
+        opacity: 1;
+        padding-top: 45px;
+        padding-bottom: 10px;
+  }
+  
+  .row-content {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: left;
+    border: 1px solid green;
+    padding-top: 10px;
+  }
+  
+  .label {
+    min-width: 140px;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+        display: inline-block;
+        border: 1px #0d0e0f;
+  }
+  
+  .text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+  }
+
+  .head {   
+    flex: display;
+    flex : row;
+    }
+
+.cross {
+    align-items: right;
+    margin: 0px 10px 5px 970px;
+    padding-top: 0px;
+    }
+  
+    .input {
+        width: 100%;
+        padding: 10px;
+        border:1px solid gray;
+        border-radius: 4px;
+        resize:vertical;
+    }
+    
+    .phone-content {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: left;
+        border: 0px solid green;
+        padding-top: 00px;
+    }
+    
+    .phone {
+        width: 100%;
+        padding:20px;
+        border:1px solid black;
+        border-radius: 4px;
+        resize:vertical;
+    }
+    
+    .address {
+        width: 100%;
+        line-height: 700%;
+        padding: 15px;
+        border:1px solid gray;
+        border-radius: 4px;
+        resize:vertical;
+    }
+    
+    select{
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        font: normal normal normal 16px Roboto;
+        letter-spacing: 0px;
+        color: #42525f;
+        background-color: transparent;
+        font: normal normal bold 15px/25px Montserrat;
+    } 
+    
+    .address-content {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: left;
+        border: 0px solid green;
+        padding-top: 00px;
+        font: normal normal 15px/25px Montserrat;
+       
+    }
+    
+    .row-citystate {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        align-items: center;
+        border: 0px solid green;
+        padding-top: 00px;
+        
+    }
+    
+    .input1 {
+        width: 100%;
+        padding: 10px;
+        border:1px solid gray;
+        resize:vertical;
+        line-height:80%;
+        margin-block-start: -100px;
+    }
+    
+    
+    .buttonParent{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-left: 450px;
+        align-items: right;
+    }
+    
+    .submit-reset{
+        display: flex;
+        flex-direction: row ;
+    }
+    
+    .button{
+        font-size: 20px;
+        font-family: Roboto;
+        letter-spacing: 0px;
+        background-color:silver;
+        opacity: 1;
+        background: transparent;
+        border: none;
+        font-weight: 400;
+        min-width: 150px;
+        padding: 7px 7px;
+        border: 1px solid#707070;
+        cursor: pointer;
+        margin-left: 100px;
+        margin-right: 10px;
+    }
+    
+    .submitButton{
+        margin-left: 2px;
+    }
+    
+    .submitButton,.resetButton{
+        text-decoration: none;
+        text-align: center;
+        margin-block-end: 10px;
+        background-color: white;
+        border: gray;
+    }
+    
+    .submitButton:hover{
+        background-color:green ;
+        color : white;
+    }
+    
+    .resetButton:hover{
+        background-color: lightblue;
+        color : white;
+    }
+    
+    .cancelButton:hover{
+        background-color:red ;
+        color : white;
+    }
+    
+    .cancelButton{
+        text-decoration: none;
+        text-align: center;
+        margin-block-end: 200px;
+        background-color: silver;
+        color: black;
+    } 
+    
+    error-output{
+        margin-left: 10px;
+        font-size: 12px;
+        font-style: italic;
+        color: red;
+    }
+    
+    @media only screen and (max-width: 960px){
+        .cancelButton{
+            margin-left: 0px;
+        }
+        .form{
+            width: 100%;
+            padding: 44px 20px 
+        }
+        .button{
+            margin-left: 80px;
+            margin-right: 20px;;
+        }
+    
+        .address-content {
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: left;
+            border: 0px solid green;
+            padding-top: 00px;
+        }
+    
+        .buttonParent{
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-left: 250px;
+            align-items: right;
+        }
+    }
+    
+    @media only screen and (max-width: 550px){
+        .cancelButton{
+            margin-left: 0px;
+        }
+        .form{
+            width: 100%;
+            padding: 44px 20px 
+        }
+        .button{
+            margin-left: 80px;
+            margin-right: 20px;;
+        }
+    
+        .address-content {
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: left;
+            border: 0px solid green;
+            padding-top: 00px;
+        }
+    
+        .button{
+            font-size: 20px;
+            font-family: Roboto;
+            letter-spacing: 0px;
+            background-color:silver;
+            opacity: 1;
+            background: transparent;
+            border: none;
+            font-weight: 400;
+            min-width: 100px;
+            padding: 7px 7px;
+            border: 1px solid#707070;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+        .buttonParent{
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-left: 50px;
+            align-items: right;
+        }
+    }    
