@@ -61,24 +61,25 @@ body {
     top: 173px;
     left: 427px;
     width: 167px;
-    height: 108px;
+    height: 603px;
     width: 70%;
     background:white 0% 0% no-repeat padding-box;
     box-shadow: 0px 10px 50px #00000029;
-    border-radius: 8px;
+    border-radius: 30px;
     opacity: 1;
   }
   
   .form-head {
-        font: normal normal 25px/3px Roboto;
-        letter-spacing: 0px;
-        color: white;
-        background-color: #008CFF;
-        text-align: center;
-        text-transform: capitalize;
-        opacity: 1;
-        padding-top: 45px;
-        padding-bottom: 10px;
+    font: normal normal 25px/3px Roboto;
+    letter-spacing: 0px;
+    color: white;
+    background-color: #008CFF;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    border-radius: 10px;
   }
   
   .row-content {
@@ -88,7 +89,7 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
     align-items: left;
-    border: 1px solid green;
+    border: 0px solid green;
     padding-top: 10px;
   }
   
