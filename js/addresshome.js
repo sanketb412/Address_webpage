@@ -1,11 +1,18 @@
+let contactList;
 window.addEventListener("DOMContentLoaded", (event) => {
+    contactList = getContactDetailsFromSotage();
+    document.querySelector(".contact-count").textContent = contactList.length;
     createInnerHtml();
 });
+
+const getContactDetailsFromSotage = () =>{
+    return localStorage.getItem("ContactList") ?
+        JSON.parse(localStorage.getItem("ContactList")) : [];
+}
 
 const createInnerHtml = () => {
     const headerHtml =
         "<tr><th>Fullname</th><th>Address</th><th>City</th><th>State</th><th>Zip Code</th><th>PhoneNumber</th><th>Actions</th></tr>";
- let contactList = createContactDetailsJSON();
   let innerHtml = `${headerHtml}`;
   for(const contact of contactList){
      innerHtml = `${innerHtml}
