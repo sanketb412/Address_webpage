@@ -66,11 +66,4 @@ class AddressBook {
        this._zip = zip;
        else throw 'Invalid zip format';
     }
-
-    //method 
-    toString() {
-        return "id =" + this.id + ",name = " + this.name + ",address = " + this.address +
-            " ,phoneNumber = " + this.phoneNumber + " ,city = " + this.city +
-            " ,state = " + this.state +" ,zip = " + this.zip;
-    }
 }
