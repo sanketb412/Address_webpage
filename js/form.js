@@ -43,3 +43,41 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 });
         
     });
+
+    const save = () => {
+        try{
+            let addressBookData = createAddressBook();
+            createAndUpdateStorage(addressBookData);
+            resetForm();
+        }catch(e){
+            return;
+        }
+    }
+    
+    const createAddressBook = ()=>{
+        let addressBookData = new AddressBook();
+        try{
+            addressBookData._name=document.querySelector('#name').value;
+        }catch(e){
+            setTextValue('.text-error', e)
+            throw e;
+        }
+        addressBookData._phoneNumber=document.querySelector('#phone').value;
+        addressBookData._address=document.querySelector('#address').value;
+        addressBookData._city=document.querySelector('#city').value;
+        addressBookData._state=document.querySelector('#state').value;
+        addressBookData._zip=document.querySelector('#zip').value;
+        alert(addressBookData.toString());
+        return addressBookData;
+    }
+
+    function createAndUpdateStorage (addressBookData){
+        let contactList = JSON.parse(localStorage.getItem("ContactList"));
+        if(contactList!=undefined){
+            contactList.push(addressBookData);
+        }else{
+            contactList=[addressBookData];
+        }
+        alert(contactList.toString());
+        localStorage.setItem("ContactList",JSON.stringify(contactList));
+    }
